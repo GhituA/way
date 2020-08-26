@@ -6,9 +6,13 @@
   width: 732px;
   min-height: 596px;
 
-  background-image: url("../img/review-greece-desktop@1x.jpg");
+
   background-repeat: no-repeat;
   background-position: left top -10px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-size: 430px auto;
+  }
 
   @media (min-width: $desktop-width) and (max-width: 1233px) {
     width: 55%;
@@ -21,12 +25,99 @@
     width: 100%;
     min-height: 445px;
 
-    background-image: url("../img/review-greece-tablet@1x.jpg");
     background-position: top center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 768px auto;
+    }
   }
 
   @media (max-width: 767px) {
     min-height: 486px;
+
+    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    //   background-size: 100% auto;
+    // }
+  }
+
+  &--greece {
+    background-image: url("../img/review-greece-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review-greece-desktop@2x.jpg");
+    }
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/review-greece-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review-greece-tablet@2x.jpg");
+      }
+    }
+  }
+
+  &--albania {
+    background-image: url("../img/review-albania-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review-albania-desktop@2x.jpg");
+    }
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/review-albania-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review-albania-tablet@2x.jpg");
+      }
+    }
+  }
+
+  &--macedonia {
+    background-image: url("../img/review-macedonia-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review-macedonia-desktop@2x.jpg");
+    }
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/review-macedonia-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review-macedonia-tablet@2x.jpg");
+      }
+    }
+  }
+
+  &--montenegro {
+    background-image: url("../img/review-montenegro-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review-montenegro-desktop@2x.jpg");
+    }
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/review-montenegro-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review-montenegro-tablet@2x.jpg");
+      }
+    }
+  }
+
+  &--croatia {
+    background-image: url("../img/review-croatia-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review-croatia-desktop@2x.jpg");
+    }
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/review-croatia-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/review-croatia-tablet@2x.jpg");
+      }
+    }
   }
 }
 
@@ -140,6 +231,6 @@
   letter-spacing: -0.466667px;
 
   @media (max-width: 767px) {
-    margin: 8px 0 0;
+    margin: 0;
   }
 }

@@ -8,10 +8,20 @@
   background-repeat: no-repeat;
   background-position: center top;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-desktop@2x.jpg");
+    background-size: 1920px auto;
+  }
+
   @media (max-width: 1023px) {
     margin-bottom: 80px;
     height: 344px;
     background-image: url("../img/hero-tablet@1x.jpg"), linear-gradient(to left, #ffffff 20%, #2c2e3f 20%, #2c2e3f 80%, #ffffff 80%);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg"), linear-gradient(to left, #ffffff 20%, #2c2e3f 20%, #2c2e3f 80%, #ffffff 80%);
+      background-size: 768px auto, 100%;
+    }
   }
 
   @media (max-width: 767px) {

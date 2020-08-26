@@ -3,9 +3,13 @@
 }
 
 .cards__item {
-  display: flex;
+  display: none;
 
   padding: 0 32px;
+
+  &--active {
+    display: flex;
+  }
 
   @media (min-width: $desktop-width) and (max-width: 1233px) {
     justify-content: space-between;

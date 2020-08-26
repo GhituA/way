@@ -109,42 +109,140 @@
       <section class="countries" id="countries">
         <ul class="countries__item buttons">
           <li class="buttons__item">
-            <a class="buttons__link buttons__link--active" href="#">Греция</a>
+            <button class="buttons__link buttons__link--active">Греция</button>
           </li>
           <li class="buttons__item">
-            <a class="buttons__link" href="#">Албания</a>
+            <button class="buttons__link">Албания</button>
           </li>
           <li class="buttons__item">
-            <a class="buttons__link" href="#">Македония</a>
+            <button class="buttons__link">Македония</button>
           </li>
           <li class="buttons__item">
-            <a class="buttons__link" href="#">Черногория</a>
+            <button class="buttons__link">Черногория</button>
           </li>
           <li class="buttons__item">
-            <a class="buttons__link" href="#">Хорватия</a>
+            <button class="buttons__link">Хорватия</button>
           </li>
         </ul>
 
         <div class="countries__item cards">
           <ul class="cards__list">
-            <li class="cards__item">
+
+            <li class="cards__item cards__item--active">
               <div class="cards__wrapper">
                 <h2 class="cards__title">Греция</h2>
                 <p class="cards__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
                 <a class="cards__btn" href="#">Купить тур сейчас</a>
               </div>
 
-              <div class="cards__review review">
+              <div class="cards__review review review--greece">
                 <div class="review__wrapper">
                   <h3 class="review__title">Отзывы</h3>
                   <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                   <div class="review__author">
-                    <img class="review__avatar" src="img/comment-1@1x.jpg" alt="Фото автора отзыва">
+                    <picture>
+                      <source type="image/webp" srcset="img/comment-1@1x.webp 1x, img/comment-1@2x.webp 2x">
+
+                      <img class="review__avatar" width="38" height="38" src="img/comment-1@1x.jpg" srcset="img/comment-1@2x.jpg 2x" alt="Фото автора отзыва">
+                    </picture>
                     <span class="review__name">Влада Голицина</span>
                   </div>
                 </div>
               </div>
             </li>
+
+            <li class="cards__item">
+              <div class="cards__wrapper">
+                <h2 class="cards__title">Албания</h2>
+                <p class="cards__text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
+                <a class="cards__btn" href="#">Купить тур сейчас</a>
+              </div>
+
+              <div class="cards__review review review--albania">
+                <div class="review__wrapper">
+                  <h3 class="review__title">Отзывы</h3>
+                  <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                  <div class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/comment-2@1x.webp 1x, img/comment-2@2x.webp 2x">
+
+                      <img class="review__avatar" width="38" height="38" src="img/comment-2@1x.jpg" srcset="img/comment-2@2x.jpg 2x" alt="Фото автора отзыва">
+                    </picture>
+                    <span class="review__name">Маришка</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards__item">
+              <div class="cards__wrapper">
+                <h2 class="cards__title">Македония</h2>
+                <p class="cards__text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров. </p>
+                <a class="cards__btn" href="#">Купить тур сейчас</a>
+              </div>
+
+              <div class="cards__review review review--macedonia">
+                <div class="review__wrapper">
+                  <h3 class="review__title">Отзывы</h3>
+                  <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+                  <div class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/comment-3@1x.webp 1x, img/comment-3@2x.webp 2x">
+
+                      <img class="review__avatar" width="38" height="38" src="img/comment-3@1x.jpg" srcset="img/comment-3@2x.jpg 2x" alt="Фото автора отзыва">
+                    </picture>
+                    <span class="review__name">Михаил Кузьмин</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards__item">
+              <div class="cards__wrapper">
+                <h2 class="cards__title">Черногория</h2>
+                <p class="cards__text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
+                <a class="cards__btn" href="#">Купить тур сейчас</a>
+              </div>
+
+              <div class="cards__review review review--montenegro">
+                <div class="review__wrapper">
+                  <h3 class="review__title">Отзывы</h3>
+                  <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+                  <div class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/comment-4@1x.webp 1x, img/comment-4@2x.webp 2x">
+
+                      <img class="review__avatar" width="38" height="38" src="img/comment-4@1x.jpg" srcset="img/comment-4@2x.jpg 2x" alt="Фото автора отзыва">
+                    </picture>
+                    <span class="review__name">Анастасия Мей</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="cards__item">
+              <div class="cards__wrapper">
+                <h2 class="cards__title">Хорватия</h2>
+                <p class="cards__text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
+                <a class="cards__btn" href="#">Купить тур сейчас</a>
+              </div>
+
+              <div class="cards__review review review--croatia">
+                <div class="review__wrapper">
+                  <h3 class="review__title">Отзывы</h3>
+                  <p class="review__text">Мы поехали всей семьей, я, моя жена и родите ли. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+                  <div class="review__author">
+                    <picture>
+                      <source type="image/webp" srcset="img/comment-5@1x.webp 1x, img/comment-5@2x.webp 2x">
+
+                      <img class="review__avatar" width="38" height="38" src="img/comment-5@1x.jpg" srcset="img/comment-5@2x.jpg 2x" alt="Фото автора отзыва">
+                    </picture>
+                    <span class="review__name">Владимир Мулицин</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+
           </ul>
         </div>
       </section>
@@ -240,7 +338,7 @@
         <div class="callback___wrapper">
           <h4 class="callback__title">У Вас остались вопросы?</h4>
           <p class="callback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <form class="callback__form" method="post" action="https://javascript.pages.academy/" autocomplete="off">
+          <form class="callback__form" method="post" action="https://echo.htmlacademy.ru" autocomplete="off">
             <ul class="callback__input-list">
               <li class="callback__input-item">
                 <label class="callback__label visually-hidden" for="phone">Тел</label>
@@ -355,7 +453,7 @@
             </svg>
           </button>
           <h4 class="popup__title">Купить тур</h4>
-          <form class="popup__form" method="post" action="https://javascript.pages.academy/" autocomplete="off">
+          <form class="popup__form" method="post" action="https://echo.htmlacademy.ru" autocomplete="off">
             <ul class="popup__input-list">
               <li class="popup__input-item">
                 <label class="popup__label visually-hidden" for="popup-phone">Тел</label>
@@ -378,8 +476,7 @@
     <script>svg4everybody()</script>
     <script src="js/main-nav.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/tabs.js"></script>
   </body>
 </html>
-Using '.editorconfig' from: "C:\Users\ninjacube\way\.editorconfig"
-Loaded GLOBs from 'C:\Users\ninjacube\way\package.json': *.json,*.js,source/*.html,source/js/**/*.js,source/img/**/*.svg,source/sass/**/*.{sass,scss}
-File: source/sass/normalize.scss [excluded]
