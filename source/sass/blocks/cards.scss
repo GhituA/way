@@ -1,0 +1,150 @@
+.cards {
+  display: flex;
+}
+
+.cards__item {
+  display: flex;
+
+  padding: 0 32px;
+
+  @media (min-width: $desktop-width) and (max-width: 1233px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+
+    padding: 0;
+  }
+}
+
+.cards__list {
+  @include list-reset;
+}
+
+.cards__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 45px;
+  padding-right: 50px;
+  width: 425px;
+
+  @media (min-width: $desktop-width) and (max-width: 1233px) {
+    padding-right: 0;
+    width: 40%;
+  }
+
+  @media (max-width: 1023px) {
+    align-items: center;
+
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0 24px;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 50px;
+    padding: 0 15px;
+  }
+}
+
+.cards__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 48px;
+
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  letter-spacing: -1.245px;
+  color: $blue-dark;
+
+  &::after {
+    content: " ";
+    position: absolute;
+
+    bottom: -17px;
+    left: 0;
+
+    width: 175px;
+    height: 3px;
+
+    background-color: $peach;
+  }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: normal;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.cards__text {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+  color: rgba(44, 46, 63, 0.7);
+
+  @media (max-width: 1023px) {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 18px;
+  }
+}
+
+.cards__btn {
+  padding: 30px 40px;
+  width: 252px;
+
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: $peach;
+  border: 0;
+
+  &:hover {
+    background-color: $orange;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 20px 40px 19px;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 767px) {
+    width: 288px;
+  }
+}

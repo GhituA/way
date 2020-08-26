@@ -1,0 +1,23 @@
+.page {
+  min-width: 320px;
+  margin: 0;
+  padding: 0 0 80px;
+
+  box-sizing: border-box;
+
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $blue-dark;
+  background-color: $white;
+
+  opacity: 1;
+
+  @media (max-width: 1023px) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 25px;
+  }
+}

@@ -1,0 +1,32 @@
+.corporate-tours {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 50px;
+  padding-right: 20px;
+
+  @media (min-width: $desktop-width) and (max-width: 1233px) {
+    padding-left: 20px;
+  }
+
+  @media (max-width: 1023px) {
+    align-items: center;
+
+    padding: 0;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.corporate-tours__info {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $blue-darkest-50;
+
+  @media (max-width: 767px) {
+    padding: 0 4px;
+  }
+}

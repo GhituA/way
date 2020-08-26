@@ -1,0 +1,280 @@
+.places {
+  margin: 0 auto 82px;
+  padding: 0 32px;
+  width: $desktop-full-width;
+
+  @media (min-width: $desktop-width) and (max-width: 1233px) {
+    padding: 0 2%;
+    width: 100%;
+  }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 83px;
+    padding: 0 10.5%;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 25px;
+    padding: 0 5%;
+    width: 100%;
+  }
+}
+
+.places__title {
+  position: relative;
+
+  margin: 0 0 64px;
+  width: 360px;
+
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  color: $blue-dark;
+  letter-spacing: -1.245px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+
+    left: 0;
+    bottom: -32px;
+
+    width: 228px;
+    height: 4px;
+    background-color: $peach;
+  }
+
+  @media (max-width: 1023px) {
+    margin: 0 auto 21px;
+
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: normal;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.places__about {
+  margin: 0 0 54px;
+  width: 330px;
+
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(44, 46, 63, 0.7);
+  letter-spacing: -0.466667px;
+
+  @media (max-width: 1023px) {
+    margin: 0 auto 40px;
+
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.places__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.places__item {
+  display: flex;
+
+  width: 350px;
+  height: 430px;
+
+  &:last-child,
+  &:nth-child(4) {
+    margin-top: 102px;
+    margin-left: auto;
+  }
+
+  &:last-child {
+    margin-left: 120px;
+    margin-right: auto;
+  }
+
+  @media (min-width: $desktop-width) and (max-width: 1233px) {
+    width: 30%;
+  }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 20px;
+    width: 288px;
+    height: 425px;
+
+    &:last-child,
+    &:nth-child(4) {
+      margin: 0;
+    }
+
+    &:last-child {
+      margin: 10px auto 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:nth-child(4) {
+      margin: 0 0 35px;
+    }
+  }
+}
+
+.places__link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
+  background-color: $blue-dark;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--greece {
+    background-image: url("../img/greece-desktop@1x.jpg");
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/greece-tablet@1x.jpg");
+    }
+
+    @media (max-width: 767px) {
+      background-image: url("../img/greece-mobile@1x.jpg");
+    }
+  }
+
+  &--albania {
+    background-image: url("../img/albania-desktop@1x.jpg");
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/albania-tablet@1x.jpg");
+    }
+
+    @media (max-width: 767px) {
+      background-image: url("../img/albania-mobile@1x.jpg");
+    }
+  }
+
+  &--macedonia {
+    background-image: url("../img/macedonia-desktop@1x.jpg");
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/macedonia-tablet@1x.jpg");
+    }
+
+    @media (max-width: 767px) {
+      background-image: url("../img/macedonia-mobile@1x.jpg");
+    }
+  }
+
+  &--montenegro {
+    background-image: url("../img/montenegro-desktop@1x.jpg");
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/montenegro-tablet@1x.jpg");
+    }
+
+    @media (max-width: 767px) {
+      background-image: url("../img/montenegro-mobile@1x.jpg");
+    }
+  }
+
+  &--croatia {
+    background-image: url("../img/croatia-desktop@1x.jpg");
+
+    @media (max-width: 1023px) {
+      background-image: url("../img/croatia-tablet@1x.jpg");
+    }
+
+    @media (max-width: 767px) {
+      background-image: url("../img/croatia-mobile@1x.jpg");
+    }
+  }
+
+  &:hover::before {
+    content: " ";
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(20, 21, 23, 0.6);
+  }
+
+  &:hover::after {
+    position: absolute;
+    content: "смотреть подробнее";
+    top: 152px;
+    left: 50%;
+
+    margin-left: -133px;
+    padding: 30px 0;
+    width: 266px;
+
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+
+    border: 1px solid $white;
+  }
+
+  &:active::after {
+    background-color: rgba(254, 120, 101, 0.5);
+  }
+
+  &:hover .places__link-text {
+    position: absolute;
+  }
+}
+
+.places__link-text {
+  padding: 16px 0 17px;
+  width: 215px;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  letter-spacing: -0.415px;
+  color: $blue-dark;
+  text-align: center;
+
+  background-color: $white;
+}

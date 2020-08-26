@@ -1,0 +1,9 @@
+.page-main {
+  background-image: url("../img/map.svg");
+  background-repeat: no-repeat;
+  background-position: center top 2586px;
+
+  @media (max-width: 1023px) {
+    background-image: none;
+  }
+}

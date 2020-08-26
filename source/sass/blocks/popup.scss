@@ -1,0 +1,193 @@
+.popup {
+  position: fixed;
+  z-index: 50;
+
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(255, 255, 255, 0.9);
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.popup__container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 728px;
+  min-height: 444px;
+
+  background-image: url("../img/buy-tour@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: 767px) {
+    background-image: none;
+  }
+}
+
+.popup___wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  width: 390px;
+
+  background-color: $peach-ligth;
+
+  @media (max-width: 767px) {
+    padding: 50px 16px;
+    width: 100%;
+
+    min-height: 568px;
+
+    background: $white;
+  }
+}
+
+.popup__esc {
+  margin-bottom: 30px;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+
+  align-self: flex-end;
+  font-size: 0;
+
+  background-color: transparent;
+  border: none;
+
+  @media (max-width: 767px) {
+    margin-bottom: 58px;
+  }
+
+  &:hover {
+    color: $blue-darkest;
+  }
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  font-size: 25px;
+  line-height: 43px;
+  color: $blue;
+  font-weight: 600;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__input-list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.popup__input {
+  position: relative;
+
+  padding: 16px 15px 15px;
+  width: 269px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $blue-darkest;
+
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  border-radius: 0;
+
+  &--phone {
+    padding-left: 26px;
+    margin-bottom: 20px;
+  }
+
+  &::placeholder {
+    color: $blue-darkest;
+  }
+
+  &--phone::before {
+    content: " ";
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    top: 6px;
+    left: 15px;
+
+    color: $peach;
+    background: red;
+  }
+
+  &:focus {
+    outline: 1px solid $blue-darkest;
+    box-shadow: 0;
+    border-radius: 0;
+  }
+
+  &--error {
+    outline: 1px solid $peach;
+  }
+
+  @media (max-width: 767px) {
+    width: 288px;
+  }
+}
+
+.popup__submit {
+  margin: 0 auto;
+  padding: 18px 0 17px;
+  width: 176px;
+
+  font-size: 12px;
+  line-height: 15px;
+
+  text-align: center;
+  letter-spacing: 2px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $peach;
+  border: 0;
+
+  @media (max-width: 1023px) {
+    width: 150px;
+
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @media (max-width: 767px) {
+    width: 288px;
+  }
+
+  &:hover {
+    background-color: #f17d4b;
+    border: 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,145 @@
+.review {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 732px;
+  min-height: 596px;
+
+  background-image: url("../img/review-greece-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left top -10px;
+
+  @media (min-width: $desktop-width) and (max-width: 1233px) {
+    width: 55%;
+  }
+
+  @media (max-width: 1023px) {
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    min-height: 445px;
+
+    background-image: url("../img/review-greece-tablet@1x.jpg");
+    background-position: top center;
+  }
+
+  @media (max-width: 767px) {
+    min-height: 486px;
+  }
+}
+
+.review__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -16px;
+  margin-right: 32px;
+  padding: 30px;
+  width: 382px;
+  min-height: 367px;
+
+
+  background-color: $white;
+
+  @media (min-width: $desktop-width) and (max-width: 1233px) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 1023px) {
+    margin: 80px 0 0;
+    padding: 30px;
+    width: 382px;
+    min-height: auto;
+  }
+
+  @media (max-width: 767px) {
+    margin: 50px 0 0;
+    padding: 30px 6.25%;
+    width: 83.75%;
+  }
+}
+
+.review__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 500;
+  letter-spacing: -0.691667px;
+  color: $blue-dark;
+
+  &::after {
+    content: " ";
+    position: absolute;
+
+    bottom: -12px;
+    left: 0;
+
+    width: 68px;
+    height: 1px;
+
+    background-color: $peach;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    &::after {
+      left: 50%;
+
+      margin-left: -34px;
+    }
+  }
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.408333px;
+  color: rgba(44, 46, 63, 0.7);
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.review__author {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.review__avatar {
+  margin-top: -6px;
+
+  @media (max-width: 767px) {
+    margin: 0;
+  }
+}
+
+.review__name {
+  margin-left: 16px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: -0.466667px;
+
+  @media (max-width: 767px) {
+    margin: 8px 0 0;
+  }
+}
