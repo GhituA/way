@@ -7,6 +7,9 @@
 *.psd
 *.sublime*
 build/
+package-lock.json
+source/css/*.css
+source/css/*.map
 node_modules/
 npm-debug.*
 Thumbs.db
